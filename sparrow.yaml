@@ -1,0 +1,13 @@
+id: com.craigrow.sparrow
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sparrow
+modules:
+  - name: hello
+    buildsystem: simple
+    build-commands:
+      - sudo snap install sparrow-wallet_1.0.0_amd64.snap --dangerous
+    sources:
+      - type: dir
+        path: .
